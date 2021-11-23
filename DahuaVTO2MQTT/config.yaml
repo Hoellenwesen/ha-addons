@@ -1,5 +1,5 @@
 name: DahuaVTO2MQTT
-version: "dev"
+version: "dev01"
 slug: dahua_mqtt
 description: Listens to events from Dahua VTO unit and publishes them via MQTT Message
 url: "https://github.com/Hoellenwesen/ha-addons/tree/main/DahuaVTO2MQTT"
