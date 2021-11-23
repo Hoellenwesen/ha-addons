@@ -1,26 +1,4 @@
-# Home Assistant Add-on: Dahua VTO to MQTT Gateway
-
-Sends Dahua VTO events to the MQTT Gateway
-
-![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
-
-## About
-
-Using [![elad-bar's][original-author]] Python code this addon simply connects to your intercom and relays events via your MQTT gateway.
-
-## Source Version
-[![Source][source-shield]][source]
-
-## Installation
-
-The installation of this add-on is straightforward and easy to do.
-
-1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.
-2. Add a new repository by URL `https://github.com/Hoellenwesen/ha-addons`
-3. Find the "DahuaVTO2MQTT" add-on and click it.
-4. Click on the "INSTALL" button.
-
-## How to use
+# How to use
 
 To use this add-on, you need to supply the config for your intercom and MQTT gateway
 

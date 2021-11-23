@@ -6,7 +6,7 @@
 
 This repository contains the following add-ons
 
-### [Example add-on](./DahuaVTO2MQTT)
+### [DahuaVTO2MQTT](./DahuaVTO2MQTT)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
