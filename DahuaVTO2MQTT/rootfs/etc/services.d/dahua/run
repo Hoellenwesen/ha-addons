@@ -7,13 +7,26 @@
 # Add your code here
 
 # Declare variables
-declare message
+#declare message
 
 ## Get the 'message' key from the user config options.
-message=$(bashio::config 'message')
+#message=$(bashio::config 'message')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+#bashio::log.info "${message:="Hello World..."}"
 
-bashio::log.info "Staring Dahua to MQTT..."
+export DAHUA_VTO_HOST=$(bashio::config 'vto.host')
+export DAHUA_VTO_USERNAME=$(bashio::config 'vto.username')
+export DAHUA_VTO_SSL=$(bashio::config 'vto.ssl')
+export DAHUA_VTO_PASSWORD=$(bashio::config 'vto.password')
+export MQTT_BROKER_HOST=$(bashio::config 'mqtt.host')
+export MQTT_BROKER_PORT=$(bashio::config 'mqtt.port')
+export MQTT_BROKER_USERNAME=$(bashio::config 'mqtt.username')
+export MQTT_BROKER_PASSWORD=$(bashio::config 'mqtt.password')
+export MQTT_BROKER_TOPIC_PREFIX=$(bashio::config 'mqtt.topic_prefix')
+
+bashio::log.info "Staring Dahua to MQTT"
+bashio::log.debug "Connecting to Intercom ${DAHUA_VTO_HOST} with username ${DAHUA_VTO_USERNAME}, SSL: ${DAHUA_VTO_SSL}"
+bashio::log.debug "Connecting to Broker ${MQTT_BROKER_HOST} with username ${MQTT_BROKER_USERNAME}, Topic prefix: ${MQTT_BROKER_TOPIC_PREFIX}"
 exec python3 /usr/bin/DahuaVTO.py
+bashio::log.info "Finished Dahua to MQTT"
