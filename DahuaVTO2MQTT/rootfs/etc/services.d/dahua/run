@@ -15,5 +15,5 @@ message=$(bashio::config 'message')
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${message:="Hello World..."}"
 
-## Run your program
-# exec my_program --with-params
+bashio::log.info "Staring Dahua to MQTT..."
+exec python3 /usr/bin/DahuaVTO.py

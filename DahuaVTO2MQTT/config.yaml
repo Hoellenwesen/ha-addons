@@ -1,0 +1,39 @@
+name: DahuaVTO2MQTT
+version: "dev"
+slug: dahua_mqtt
+description: Listens to events from Dahua VTO unit and publishes them via MQTT Message
+url: "https://github.com/Hoellenwesen/ha-addons/tree/main/DahuaVTO2MQTT"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+  vto:
+    host: '192.168.1.110'
+    ssl: false
+    username: 'admin'
+    password: 'admin'
+  mqtt:
+    host: core-mosquitto
+    port: 1883
+    username: 'homeassistant'
+    password: 'homeassistant'
+    prefix: DahuaVTO
+  debug: false
+schema:
+  vto:
+    host: str
+    ssl: bool
+    username: str
+    password: str
+  mqtt:
+    host: str
+    port: int
+    username: str
+    password: str
+    prefix: str
+  debug: bool
+image: "ghcr.io/hoellenwesen/{arch}-addon-dahuavto2mqtt"
