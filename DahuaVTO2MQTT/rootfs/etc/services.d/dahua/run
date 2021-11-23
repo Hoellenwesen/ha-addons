@@ -16,7 +16,7 @@ export MQTT_BROKER_TOPIC_PREFIX=$(bashio::config 'mqtt.prefix')
 export DEBUG=$(bashio::config 'debug')
 
 bashio::log.info "Starting Dahua to MQTT"
-bashio::log.info "Connecting to Intercom ${DAHUA_VTO_HOST} with username ${DAHUA_VTO_USERNAME}, SSL: ${DAHUA_VTO_SSL}"
-bashio::log.info "Connecting to Broker ${MQTT_BROKER_HOST} with username ${MQTT_BROKER_USERNAME}, Topic prefix: ${MQTT_BROKER_TOPIC_PREFIX}"
-exec nohup python3 /usr/bin/DahuaVTO.py &
+bashio::log.debug "Connecting to Intercom ${DAHUA_VTO_HOST} with username ${DAHUA_VTO_USERNAME}, SSL: ${DAHUA_VTO_SSL}"
+bashio::log.debug "Connecting to Broker ${MQTT_BROKER_HOST} with username ${MQTT_BROKER_USERNAME}, Topic prefix: ${MQTT_BROKER_TOPIC_PREFIX}"
+exec python3 /usr/bin/DahuaVTO.py
 bashio::log.info "Finished Dahua to MQTT"
