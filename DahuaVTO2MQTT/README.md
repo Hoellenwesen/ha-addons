@@ -5,11 +5,13 @@ _Sends Dahua VTO events to the MQTT Gateway._
 
 ## About
 
-Using [![Generic badge](https://badgen.net/badge/elad-bar's/maintainer/green?icon=gitlab)](https://gitlab.com/elad.bar/DahuaVTO2MQTT) Python code this addon simply connects to your intercom and relays events via your MQTT gateway.
+Using [elad-bar's][original-author] Python code this addon simply connects to your intercom and relays events via your MQTT gateway.
+
+
+## Source
 
 [![Source][source-shield]][source]
 
- [![elad-bar's][original-author]] 
 
 ## Installation
 
@@ -23,36 +25,20 @@ The installation of this add-on is straightforward and easy to do.
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
 
-# How to use
+## MGTT Events
 
-To use this add-on, you need to supply the config for your intercom and MQTT gateway
-
-- Requires you to use one of the supported Dahua Intercoms
-- Requires you to run a local MQTT server
+[List of available MGTT events][https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/MQTTEvents.MD]
 
 
-## Configuration
+## Supported Models
 
-Add-on configuration:
+[List of supported Dahua devices][https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/SupportedModels.md]
 
-```yaml
-vto:
-  host: '192.168.1.110'
-  ssl: false
-  username: 'admin'
-  password: 'admin'
-mqtt:
-  host: core-mosquitto
-  port: 1883
-  username: 'homeassistant'
-  password: 'homeassistant'
-  prefix: DahuaVTO
-debug: false
-```
 
 ## Known issues and limitations
 
 - None. Let me know.
+
 
 ## Support
 
@@ -67,6 +53,4 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 [issue]: https://github.com/Hoellenwesen/ha-addons/issues
 [source-shield]: https://img.shields.io/badge/version-master-blue.svg
 [source]: https://gitlab.com/elad.bar/DahuaVTO2MQTT
-[release-shield]: https://img.shields.io/badge/version-v1.0.2-blue.svg
-[release]: https://github.com/troykelly/hassio-addons-dahuavto2mqtt/releases/tag/v1.0.2
 [original-author]: https://gitlab.com/elad.bar
