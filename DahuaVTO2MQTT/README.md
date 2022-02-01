@@ -27,12 +27,12 @@ The installation of this add-on is straightforward and easy to do.
 
 ## MGTT Events
 
-[List of available MGTT events][https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/MQTTEvents.MD]
+[List of available MGTT events](https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/MQTTEvents.MD)
 
 
 ## Supported Models
 
-[List of supported Dahua devices][https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/SupportedModels.md]
+[List of supported Dahua devices](https://gitlab.com/elad.bar/DahuaVTO2MQTT/-/blob/master/SupportedModels.md)
 
 
 ## Known issues and limitations
