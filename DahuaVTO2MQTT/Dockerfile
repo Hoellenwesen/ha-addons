@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && \
     pip install paho-mqtt requests
 
 ## Change permissions
-RUN chmod +x /usr/bin/DahuaVTO.py
+RUN chmod +x /app/DahuaVTO.py
