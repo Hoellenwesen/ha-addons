@@ -13,6 +13,5 @@ RUN apk update && \
 RUN pip install --upgrade pip && \
     pip install paho-mqtt requests
 
-## Get DahuaVTO2MQTT libary
-RUN wget https://raw.githubusercontent.com/Hoellenwesen/DahuaVTO2MQTT/master/DahuaVTO.py -P /usr/bin && \
-    chmod +x /usr/bin/DahuaVTO.py
+## Change permissions
+RUN chmod +x /usr/bin/DahuaVTO.py
