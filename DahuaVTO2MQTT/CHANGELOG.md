@@ -1,7 +1,2 @@
-## 1.0.0
-
-- Suppress InsecureRequest warning
-- DahuaVTO2MQTT python libary updated
-
-## 1.0.1
+## 1.0.2
 - Implement updated code from source repository
