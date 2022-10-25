@@ -7,7 +7,7 @@ COPY rootfs /
 # Setup base
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache wget
+    apk add --no-cache wget python3 py3-pip
 
 ## Install required pythpn modules
 RUN pip install --upgrade pip && \
