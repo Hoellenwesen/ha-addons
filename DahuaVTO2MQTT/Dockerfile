@@ -15,3 +15,5 @@ RUN pip install --upgrade pip && \
 
 ## Change permissions
 RUN chmod +x /app/DahuaVTO.py
+RUN chmod +x etc/services.d/dahua/run
+RUN chmod +x etc/services.d/dahua/finish
