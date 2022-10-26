@@ -25,4 +25,4 @@ _Listens to events from Dahua VTO unit and publishes them via MQTT Message._
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[release-shield]: https://img.shields.io/badge/version-v1.0.3-blue.svg
+[release-shield]: https://img.shields.io/badge/version-v1.0.4-blue.svg
