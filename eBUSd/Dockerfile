@@ -3,8 +3,10 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
+RUN echo 'deb http://deb.debian.org/debian bookworm main' >> /etc/apt/sources.list && \
+    apt-get install wget
+
 RUN mkdir -p /etc/apt/keyrings && \
-    apt-get install wget && \
     wget -q -O /etc/apt/keyrings/ebusd.gpg https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd.gpg && \
     wget -O /etc/apt/sources.list.d/ebusd.list https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd-default-bookworm.list
 
