@@ -5,11 +5,10 @@ description: Listens to events from Dahua VTO unit and publishes them via MQTT M
 url: "https://github.com/Hoellenwesen/ha-addons/tree/main/DahuaVTO2MQTT"
 startup: services
 arch:
-  - armhf
   - armv7
   - aarch64
   - amd64
-  - i386
+image: "ghcr.io/hoellenwesen/ha-addon-dahuavto2mqtt-{arch}"
 init: false
 options:
   vto:
@@ -37,4 +36,3 @@ schema:
     password: str
     prefix: str
   debug: bool
-image: "ghcr.io/hoellenwesen/{arch}-addon-dahuavto2mqtt"
