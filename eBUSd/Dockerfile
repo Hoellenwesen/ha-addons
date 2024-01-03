@@ -3,8 +3,9 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-RUN mkdir -p /etc/apt/keyrings && sudo wget -q -O /etc/apt/keyrings/ebusd.gpg https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd.gpg
-RUN wget -O /etc/apt/sources.list.d/ebusd.list https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd-default-bookworm.list
+RUN mkdir -p /etc/apt/keyrings && \
+    wget -q -O /etc/apt/keyrings/ebusd.gpg https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd.gpg && \
+    wget -O /etc/apt/sources.list.d/ebusd.list https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd-default-bookworm.list
 
 RUN apt-get update && \
     apt-get install ebusd
