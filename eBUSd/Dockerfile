@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-RUN echo 'deb http://deb.debian.org/debian bookworm main' >> /etc/apt/sources.list && \
+RUN apt-get update && \
     apt-get install wget
 
 RUN mkdir -p /etc/apt/keyrings && \
