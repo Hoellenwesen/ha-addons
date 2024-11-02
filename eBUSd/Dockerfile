@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 RUN apt-get update && \
-    apt-get -y install wget
+    apt-get -y install wget gnupg2
 
 RUN mkdir -p /etc/apt/keyrings && \
     wget -q -O /etc/apt/keyrings/ebusd.gpg https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd.gpg && \
