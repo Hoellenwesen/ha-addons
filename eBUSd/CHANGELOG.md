@@ -1,4 +1,7 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+## version: 24
+- EBUSd 24.1
+
 ## version: 23.3
 
 - Base OS chnaged to Debian 12
