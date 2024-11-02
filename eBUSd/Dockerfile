@@ -8,6 +8,7 @@ RUN apt-get update && \
 
 RUN mkdir -p /etc/apt/keyrings && \
     wget -q -O /etc/apt/keyrings/ebusd.gpg https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd.gpg && \
+    apt-key add /etc/apt/keyrings/ebusd.gpg && \
     wget -O /etc/apt/sources.list.d/ebusd.list https://raw.githubusercontent.com/john30/ebusd-debian/master/ebusd-default-bookworm.list
 
 RUN apt-get update && \
